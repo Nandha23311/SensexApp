@@ -36,15 +36,42 @@ exports.findFamily=function(req,res){
     findObj.villageName=reqBody.villageName;
     }
 
-    Family.find(findObj,function(errData,findData){
+    Family.count(findObj,function(errData,findData){
         if (findData != null)
-        {
-            res.status(HttpStatus.OK).json({
-                status: 'success',
-                code: HttpStatus.OK,
-                data:findData
-            });
-            return;
+        { 
+			Family.count({"memberName.gender":"Male"},function(err,malecount){
+				if(malecount != null)
+				{
+					Family.count({"memberName.gender":"Female"},function(err,femalecount){
+						if(femalecount != null){
+							res.status(HttpStatus.OK).json({
+								status: 'success',
+								code: HttpStatus.OK,
+								total:findData,
+								male:malecount,
+								female:femalecount
+							});
+						return;
+					
+						}
+						else{
+							 res.status(HttpStatus.NOT_FOUND).json({
+								status: 'failure',
+								code: HttpStatus.NOT_FOUND,
+								data:"Records Not Found"
+							});
+						}
+					});
+				}	else{
+							 res.status(HttpStatus.NOT_FOUND).json({
+								status: 'failure',
+								code: HttpStatus.NOT_FOUND,
+								data:"Records Not Found"
+							});
+						}
+						
+			})
+           
         }else{
              res.status(HttpStatus.NOT_FOUND).json({
                 status: 'failure',

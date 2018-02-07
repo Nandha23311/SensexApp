@@ -8,6 +8,7 @@ var FamilySchema=new Schema
     familyName:{type :String},
 	villageName:{type:String},
     memberName:[{
+		_id:false,
         name:{type: String},
         age:{type: Number},
 		gender:{type:String},
