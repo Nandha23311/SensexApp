@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8aa4b10-34a5-433e-990e-d1b7164a7f4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/models/FamilyCollection.js" afterPath="$PROJECT_DIR$/Server/models/FamilyCollection.js" />
-    </list>
+    <list default="true" id="b8aa4b10-34a5-433e-990e-d1b7164a7f4d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +13,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FamilyCollection.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FamilyCollection.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/models/FamilyCollection.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -26,7 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FamilyController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FamilyController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/controllers/FamilyController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="59">
@@ -480,18 +477,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/models/FamilyCollection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server/controllers/FamilyController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/models/FamilyCollection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>
