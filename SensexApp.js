@@ -7,7 +7,7 @@ var port = process.env.PORT || 9000;
 ////////////Mongoose Connection///////////////////////////////////////
 
 
-var mongodb='mongodb://nanda:sensex@ds125588.mlab.com:25588/sensex'
+var mongodbUri='mongodb://nanda:sensex@ds125588.mlab.com:25588/sensex'
 
 
 mongoose.connect(mongodbUri,options);
