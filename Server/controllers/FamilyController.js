@@ -31,8 +31,12 @@ exports.saveFamily=function(req,res){
 exports.findFamily=function(req,res){
     console.log("Hitted ::"+req.url);
     var reqBody=req.body;
+    var findObj={};
+    if(reqBody.villageName){
+    findObj.villageName=reqBody.villageName;
+    }
 
-    Family.find({},function(errData,findData){
+    Family.find(findObj,function(errData,findData){
         if (findData != null)
         {
             res.status(HttpStatus.OK).json({
