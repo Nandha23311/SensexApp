@@ -10,7 +10,8 @@ var FamilySchema=new Schema
         name:{type: String},
         age:{type: Number},
         occupation:{type: String}
-    }]
+    }],
+    villageName:{type:String}
 });
 
 module.exports=mongoose.model("Familycollection",FamilySchema)
