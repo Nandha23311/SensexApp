@@ -6,8 +6,8 @@ var port = process.env.PORT || 9000;
 ///////////////////////////////////////////////////////////////////////
 ////////////Mongoose Connection///////////////////////////////////////
 
-var mongodbUri = 'mongodb://localhost/SensexApp';
-//var mongodbUri = 'mongodb://nanda:nanda23311@ds135983.mlab.com:35983/funapp';
+
+var mongodb='mongodb://nanda:sensex@ds125588.mlab.com:25588/sensex'
 
 
 mongoose.connect(mongodbUri,options);
