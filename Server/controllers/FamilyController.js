@@ -36,13 +36,13 @@ exports.findFamily=function(req,res){
     findObj.villageName=reqBody.villageName;
     }
 
-    Family.count(findObj,function(errData,findData){
+Family.count({villageName:reqBody.villageName},function(errData,findData){
         if (findData != null)
         { 
-			Family.count({"memberName.gender":"Male"},function(err,malecount){
+			Family.count({villageName:reqBody.villageName,"memberName.gender":"Male"},function(err,malecount){
 				if(malecount != null)
 				{
-					Family.count({"memberName.gender":"Female"},function(err,femalecount){
+					Family.count({villageName:reqBody.villageName,"memberName.gender":"Female"},function(err,femalecount){
 						if(femalecount != null){
 							res.status(HttpStatus.OK).json({
 								status: 'success',
